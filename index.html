@@ -39,18 +39,23 @@
         </nav>
    </header>
 
-   <section class="container"> 
-    <div class="Slider container">
-      <div class="Slider">
-        <img id="Slide-1" src="assets/ZENLESS ZONE ZERO.jpg">
+<section class="Slider-wrapper"> 
+        <!-- AGREGADO: id="slider" para que el JS lo encuentre -->
+        <div class="Slider" id="slider">
+            <img id="Slide-1" src="assets/ZENLESS ZONE ZERO.png" alt="Zenless Zone Zero">
+            <img id="Slide-2" src="assets/WUWA.png" alt="WUWA">
+            <img id="Slide-3" src="assets/FORTNITE.png" alt="FORTNITE">
+        </div>
+        <!-- AGREGADO: botones tipo <button> con sus funciones irASlide() -->
+        <div class="Slider-nav">
+            <button class="nav-btn active" onclick="irASlide(0)" aria-label="Ver Zenless Zone Zero"></button>
+            <button class="nav-btn" onclick="irASlide(1)" aria-label="Ver WUWA"></button>
+            <button class="nav-btn" onclick="irASlide(2)" aria-label="Ver Fortnite"></button>
+        </div>
+    </section>
 
 
 
-
-      </div>
-
-    </div>
-   </section>
    
    <footer>
    <p>© 2026 Farmeo Gaming</p>
@@ -61,7 +66,7 @@
 
     <p><a href="">Facebook</a></p>
    </footer>
-
+<script src="js/script.js"></script>
 </body>
 
 </html>

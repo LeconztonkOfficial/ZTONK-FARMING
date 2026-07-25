@@ -44,25 +44,24 @@ nav {
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px; /* Reduje la separación del logo con su texto */
+    gap: 1px; /* Reduje la separación del logo con su texto */
 }
 
 .logo img {
-    height: 50px;
+    height: 70px;
     width: auto;
 }
 
-.Discord
-{
-     display: flex;
+.Discord {
+    display: flex;
     align-items: center;
     gap: 5px;
-    background-color: rgb(207, 202, 236) ;
+    background-color: rgb(207, 202, 236);
+    padding: 6px 12px;
+    border-radius: 6px;
 }
 
-
-.Discord img
-{
+.Discord img {
     height: 18px;
     width: auto;
 }
@@ -96,11 +95,88 @@ nav {
     color: inherit;
     text-decoration: none;
     font-weight: 600;
-    padding-right: 0; /* Limpiado para usar el gap del padre */
 }
 
 .enlaces a:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(114, 137, 218);
+}
+
+/* ===========================
+   SLIDER HÍBRIDO CON SCROLL SNAP
+=========================== */
+
+/* Contenedor principal que sirve de marco */
+.Slider-wrapper {
+    position: relative; /* Clave para posicionar los botones dentro */
+    width: 90%;
+    max-width: 875px;
+    margin: 2rem auto;
+}
+
+/* Carrusel con desplazamiento nativo */
+.Slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    
+    /* Control de desplazamiento: SOLO horizontal */
+    overflow-x: auto;
+    overflow-y: hidden;
+    touch-action: pan-x; /* Permite el desplazamiento táctil horizontal sin saltos verticales */
+    
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 12px;
+    box-shadow: 0 1rem 2rem -0.5rem rgba(0, 0, 0, 0.3);
+    
+    /* Ocultamos la barra de scroll visual */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE y Edge */
+}
+
+.Slider::-webkit-scrollbar {
+    display: none; /* Chrome, Safari y Edge */
+}
+
+/* Las imágenes ocupan exactamente el 100% de la ventana del slider */
+.Slider img {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantiene la proporción sin deformar */
+    scroll-snap-align: start;
+}
+
+/* PUNTOS DE NAVEGACIÓN EN LA PARTE INFERIOR */
+.Slider-nav {
+    display: flex;
+    gap: 0.75rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.Slider-nav .nav-btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ffffff;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 250ms ease, transform 250ms ease, background-color 250ms ease;
+}
+
+.Slider-nav .nav-btn:hover {
+    opacity: 0.8;
+}
+
+/* Estilo para el botón correspondiente a la imagen visible activa */
+.Slider-nav .nav-btn.active {
+    opacity: 1;
+    transform: scale(1.25);
+    background-color: #565d79; /* Color destacado de acento */
 }
 
 /* ===========================
@@ -116,6 +192,8 @@ nav {
     }
     
     .enlaces {
+        flex-wrap: wrap;
+        justify-content: center;
         padding: 10px 0px;
     }
 }
