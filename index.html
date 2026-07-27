@@ -28,43 +28,109 @@
          </div>
        </div>
        <div class="enlaces">
-         <a href="" class="nav-link"> Inicio</a>
-         <a href="" class="nav-link"> Servicios</a>
-         <a href="" class="nav-link"> Nosotros</a>
-        <div class="Discord">
-          <img src="assets/Discord.png" alt="Discord">
-         <a href="" class="nav-link"> Contactame</a>
-        </div>
+         <a href="index.html" class="nav-link"> Inicio</a>
+         <a href="servicios.html" class="nav-link"> Servicios</a>
+         <a href="Nosotros.html" class="nav-link"> Nosotros</a>
        </div>
+        <div class="Discord">
+          <img src="assets/whatsapp.png" alt="WhatsApp">
+         <a href="https://wa.me/525635768901" class="nav-link"> Contactame</a>
+        </div>
         </nav>
    </header>
 
+
+ 
+
 <section class="Slider-wrapper"> 
-        <!-- AGREGADO: id="slider" para que el JS lo encuentre -->
-        <div class="Slider" id="slider">
-            <img id="Slide-1" src="assets/ZENLESS ZONE ZERO.png" alt="Zenless Zone Zero">
-            <img id="Slide-2" src="assets/WUWA.png" alt="WUWA">
-            <img id="Slide-3" src="assets/FORTNITE.png" alt="FORTNITE">
-        </div>
-        <!-- AGREGADO: botones tipo <button> con sus funciones irASlide() -->
-        <div class="Slider-nav">
-            <button class="nav-btn active" onclick="irASlide(0)" aria-label="Ver Zenless Zone Zero"></button>
-            <button class="nav-btn" onclick="irASlide(1)" aria-label="Ver WUWA"></button>
-            <button class="nav-btn" onclick="irASlide(2)" aria-label="Ver Fortnite"></button>
-        </div>
-    </section>
+
+  <!-- 1. TEXTO DE BIENVENIDA -->
+  <div class="hero-texto">
+    <h1>Bienvenido a <span>Ztonk Farming</span></h1>
+    <p>¡Tu destino para servicios de farmeo, boost y leveo en tus juegos favoritos!</p>
+    
+    <div class="hero-botones">
+      <a href="#servicios" class="btn-primary">Ver Servicios</a>
+      <a href="#" class="btn-secondary">Pedir Farmeo</a>
+    </div>
+  </div>
+
+  <!-- 2. CONTENEDOR NUEVO (Aquí está el truco) -->
+  <div class="slider-container">
+    
+    <div class="Slider" id="slider">
+      <img id="Slide-1" src="assets/ZENLESS ZONE ZERO.png" alt="Zenless Zone Zero">
+      <img id="Slide-2" src="assets/WUWA.png" alt="WUWA">
+      <img id="Slide-3" src="assets/FORTNITE.png" alt="FORTNITE">
+    </div>
+
+    <div class="Slider-nav">
+      <button class="nav-btn active" onclick="irASlide(0)" aria-label="Ver Zenless Zone Zero"></button>
+      <button class="nav-btn" onclick="irASlide(1)" aria-label="Ver WUWA"></button>
+      <button class="nav-btn" onclick="irASlide(2)" aria-label="Ver Fortnite"></button>
+    </div>
+
+  </div> <!-- Cierre del contenedor nuevo -->
+
+</section>
 
 
+<div class="contenido">
 
-   
+  <h1> NIVEL + / FARMEO DE GEMAS / RANGO / MISIONES / VENTA DE PAVOS / FARMEO DE PASES </h1>
+<div class="Cuadros">
+  <!-- Tarjeta 1-->
+
+  <div class="tarjeta">
+   <h2> SERVICIO DE FARMEO</h2>
+   <p>Ofrecemos servicios de farmear gemas en tus juegos favoritos. Nuestro equipo de expertos se encargará de maximizar tu progreso en el juego, ahorrándote tiempo y esfuerzo.</p>
+  </div>
+<!--Tarjeta 2 -->
+<div class="tarjeta">
+   <h2> SERVICIO DE PASE</h2>
+   <p>Si estás buscando obtener el pase de batalla o cualquier otro pase en tu juego favorito, nuestro servicio de farmear pases es la solución perfecta. Te ayudaremos a desbloquear contenido exclusivo y recompensas especiales.</p>
+  </div>
+
+  <!-- Tarjeta 3 -->
+  <div class="tarjeta">
+    <h2>Servicio de Venta de Pavos</h2>
+    <p>Ofrecemos un servicio de venta de pavos en Fortnite. Nuestro equipo se encargará de proporcionarte los pavos que necesitas para verte mejor en batalla.</p>
+  </div>
+<!-- Tarjeta 4 -->
+  <div class="tarjeta">
+    <h2>Servicio de SKINS</h2>
+    <p>Si estás buscando mejorar tu aspecto en tu juego favorito, nuestro servicio de skins es la solución perfecta.</p>
+  </div>
+
+  <!-- Tarjeta 5 --> 
+   <div class="tarjeta">
+    <h2>Servicio de Boost</h2>
+    <p>Si estás buscando mejorar tu rango en tu juego favorito, nuestro servicio de boost es la solución perfecta. Nuestro equipo de expertos se encargará de llevarte al siguiente nivel.</p>
+   </div>
+</div>
+
+</div>
+
    <footer>
-   <p>© 2026 Farmeo Gaming</p>
-
-    <p><a href="">Discord</a></p>
-
-    <p><a href="">TikTok</a></p>
-
-    <p><a href="">Facebook</a></p>
+    <p>¡Gracias por visitar nuestra página! Síguenos en nuestras redes sociales para estar al tanto de las últimas noticias y actualizaciones.</p>
+    <p>© 2026 Ztonk Farming </p>
+    
+   <div class="redes">
+  <a href="https://discord.gg/uQwDSKqjyx" target="_blank" rel="noopener noreferrer">
+    <img src="assets/Discord.png" alt="Discord">
+    <span>Discord</span>
+  </a>
+  
+  <a href="https://wa.me/525635768901" target="_blank" rel="noopener noreferrer">
+    <img src="assets/whatsapp.png" alt="Whatsapp">
+    <span>Whatsapp</span>
+  </a>
+  
+  <a href="https://www.facebook.com/profile.php?id=61592021236898" target="_blank" rel="noopener noreferrer">
+    <img src="assets/facebook.png" alt="Facebook">
+    <span>Facebook</span>
+  </a>
+</div>
    </footer>
 <script src="js/script.js"></script>
 </body>
