@@ -486,7 +486,26 @@ footer {
     
 }
 
+.comentarios{
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  max-width: 1600px; /* Expandimos el límite de la página */
+  width: 95%;        /* Aseguramos que use el 95% de la pantalla */
+  margin: 0 auto; 
+  padding: 40px 20px;
+  color: white;
+  letter-spacing: 1px;
+   margin-top: 40px;/* Separa la fila de tarjetas del titulo superior */
+  text-align: left; /* Alinea el texto a la izquierda como la imagen */
+  font-size: 2rem;
+  font-weight: 900;
+}
 
+.comentarios span {
+  color: #8b6df7; 
+
+}
 
 
 /* ===========================
