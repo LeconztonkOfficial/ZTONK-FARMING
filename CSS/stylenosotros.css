@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background: #18161F;;
+    background:  #172033;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     /* Prevenimos que aparezca un scroll horizontal para vistas en el móvil */
@@ -31,6 +31,8 @@ header {
     width: 100%;
     box-shadow: 0 2px 10px  rgba(200, 166, 255, 0.5);
 }
+
+
 
 /* 1. Contenedor Principal ampliando el límite máximo */
 .hero-container {
@@ -107,7 +109,6 @@ margin-top : 70px;
 .btn-secondary:hover {
   background-color: rgba(139, 109, 247, 0.1);
 }
-
 
 
 /* El NAV distribuye el logo a la izquierda y enlaces a la derecha */
@@ -351,13 +352,12 @@ nav {
 /* --- TARJETA RECTANGULAR MASIVA --- */
 .tarjeta {
   background-color: #0d0e12;
-  padding: 50px 60px; /* Padding alto para dar mucha altura interna */
+  padding: 35px 40px; /* Padding alto para dar mucha altura interna */
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-  
   width: 90%; 
-  max-width: 1300px; /* Ancho amplio tipo Banner Premium */
+  max-width: 1200px; /* Ancho amplio tipo Banner Premium */
   box-sizing: border-box;
 }
 
