@@ -11,8 +11,11 @@
 <meta name="description" content=" Servicios de farmeo, boost y leveo para tus juegos favoritos">
 <meta name="author" content="Ztonk">
 
+
+
 <!-- TOMAR ESTILOS-->
 <link rel="stylesheet" href="CSS/styleservicios.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 <body>
 
@@ -55,6 +58,25 @@
 
 </div>
  </div>
+
+
+
+  <!-- INTEGRACION DE MAPA -->
+
+<section class="seccion-mapa">
+    <h1>Nuestra Zona de Cobertura</h1>
+    <p>Realizamos entregas a domicilio dentro del área señalada.</p>
+    
+    <!-- Contenedor donde se dibuja el mapa -->
+    <div id="mapa"></div>
+  </section>
+
+  <!-- JS de Leaflet (Librería del mapa) -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  
+  <!-- Tu archivo de lógica JavaScript local -->
+  <script src="js/Mapa.js"></script>
+  
 
    <footer>
     <p>¡Gracias por visitar nuestra página! Síguenos en nuestras redes sociales para estar al tanto de las últimas noticias y actualizaciones.</p>

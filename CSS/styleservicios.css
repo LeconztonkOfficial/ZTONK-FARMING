@@ -84,7 +84,7 @@ margin-top : 70px;
 }
 
 .btn-primary {
-  background-color: #8b6df7;
+  background-color: #5a7096;
   color: #ffffff;
   padding: 12px 24px;
   border-radius: 8px;
@@ -312,7 +312,49 @@ nav {
   }
 }
 
+/* Configuración del contenedor principal */
+.seccion-mapa {
+  max-width: 1000px; /* Ajustado a 1000px para que coincida con el ancho del mapa */
+  margin: 40px auto;
+  padding: 0 10px;
+  font-family: system-ui, -apple-system, sans-serif;
+  text-align: center;
+}
 
+.seccion-mapa h1 {
+  color: #cfdbf8;
+  margin-bottom: 8px;
+  font-size: 60px;
+}
+
+.seccion-mapa p {
+  color: #fafcfe;
+  margin-bottom: 24px;
+  font-size: 25px;
+}
+
+/* El elemento #mapa perfectamente centrado y fluido */
+#mapa {
+  width: 100%;          /* Ocupa el 100% del contenedor padre centrado */
+  max-width: 1000px;    /* Ancho máximo deseado */
+  height: 500px;
+  margin: 0 auto;       /* Centra el mapa si el contenedor es más ancho */
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+/* Tamaño de letra para los popups del mapa */
+.leaflet-popup-content {
+  font-size: 16px;
+}
+
+/* Adaptación para pantallas de teléfonos celulares */
+@media (max-width: 600px) {
+  #mapa {
+    height: 320px;
+  }
+}
 
 footer {
   background-color: #1a1a1a; /* Fondo oscuro para dar contraste */
